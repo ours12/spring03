@@ -7,10 +7,10 @@ import java.util.List;
 
 @Getter
 public class OrdersResponseDto {
-    private String restaurantName;
-    private List<FoodsResponseDto> foods;
-    private int deliveryFee;
-    private int totalPrice;
+    private  String restaurantName;
+    private  List<FoodsResponseDto> foods;
+    private  int deliveryFee;
+    private  int totalPrice;
 
     public OrdersResponseDto(
             Orders orders,
@@ -22,4 +22,5 @@ public class OrdersResponseDto {
         this.deliveryFee = deliveryFee;
         this.totalPrice = orders.getTotalPrice();
     }
+
 }
